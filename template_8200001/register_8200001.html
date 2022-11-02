@@ -50,89 +50,84 @@
 		</nav>
 
     <div class="container">
-      <div class="page-header">
-    <h1>Registration Form</h1>
-  </div>
+        <div class="container theme-showcase" role="main">
+
+            <!-- Main jumbotron for a primary marketing message or call to action -->
+            <div class="jumbotron">
+                <h1>1η Ατομική Άσκηση</h1>
+            </div>
+        </div>
+
+            <div class="page-header">
+                <h1>Registration Form</h1>
+            </div>
+
+        <div class="alert alert-warning alert-dismissible fade in text-center" role="alert">
+            Please fill the following form  to create an account
+        </div>
+
+
+
 
       <form action="servlet/Register" method="POST" class="form-horizontal">
-
-         <!-- Departament -->
-         <div class="form-group">
-          <label for="ccountry" class="col-sm-2 control-label main-label">Departament: </label>
-          <div class="col-sm-10">
-            <select id="ccountry" name="country" class="form-control">
-              <option value="">--- Please choose a Departament ---</option>
-              <option value="Greece">DMST</option>
-              <option value="Cyprus">DAF</option>	
-              <option value="France">DBA</option>
-            </select>
-          </div>
-        </div> 
-        
-        <!-- AM -->
-        <div class="form-group">
-          <label for="name" class="col-sm-2 control-label main-label">AM </label>
-          <div class="col-sm-10">
-            <input type="text" name="firstname" id="name" class="form-control" placeholder="82xxx">
-          </div>
-        </div>
 
         <!-- firstname -->
         <div class="form-group">
           <label for="name" class="col-sm-2 control-label main-label">Name </label>
           <div class="col-sm-10">
-            <input type="text" name="firstname" id="name" class="form-control" placeholder="Name">
+            <input type="text" name="firstname" id="name" class="form-control" placeholder="your name">
           </div>
         </div>
 
         <!-- lastaname -->
         <div class="form-group">
-          <label for="surname" class="col-sm-2 control-label main-label">Surname </label>
+          <label for="surname" class="col-sm-2 control-label main-label">Surname  </label>
           <div class="col-sm-10">
-            <input type="text" name="lastname" id="surname" class="form-control" placeholder="Lastname">
+            <input type="text" name="surname" id="surname" class="form-control" placeholder="your surname">
           </div>
         </div>
 
         <!-- Email -->
         <div class="form-group">
-          <label for="surname" class="col-sm-2 control-label main-label">Email </label>
+          <label for="email" class="col-sm-2 control-label main-label">Email </label>
           <div class="col-sm-10">
-            <input type="text" name="lastname" id="surname" class="form-control" placeholder="Email">
-          </div>
-        </div>
-        <!-- lastaname -->
-        <div class="form-group">
-          <label for="surname" class="col-sm-2 control-label main-label">Phone </label>
-          <div class="col-sm-10">
-            <input type="text" name="lastname" id="surname" class="form-control" placeholder="Phone">
+            <input type="text" name="email" id="email" class="form-control" placeholder="your email">
           </div>
         </div>
 
-                      
-        <!-- gender -->
+        <!-- Username -->
         <div class="form-group">
-    
-          <label class="col-sm-2 control-label main-label"></label>
+          <label for="username" class="col-sm-2 control-label main-label">Username </label>
           <div class="col-sm-10">
-    
-            <label class="radio-inline">
-              <input type="radio" name="gender" value="Male"> Male
-            </label>
-            <label class="radio-inline">
-              <input type="radio" name="gender" value="Female"> Female
-            </label>              
+            <input type="text" name="lastname" id="username" class="form-control" placeholder="your username">
           </div>
-                
         </div>
+          <!-- Password -->
+          <div class="form-group">
+              <label for="password" class="col-sm-2 control-label main-label">Password </label>
+              <div class="col-sm-10">
+                  <input type="text" name="password" id="password" class="form-control" placeholder="your password">
+              </div>
+          </div>
+
+
+          <!-- Confirm -->
+          <div class="form-group">
+              <label for="confirm" class="col-sm-2 control-label main-label">Confirm </label>
+              <div class="col-sm-10">
+                  <input type="text" name="confirm" id="confirm" class="form-control" placeholder="confirm your password">
+              </div>
+          </div>
+
         
-        <!-- skills -->
+        <!-- terms -->
         <div class="form-group">
     
           <label class="col-sm-2 control-label main-label"></label>
           <div class="col-sm-10">
     
             <label class="checkbox-inline">
-              <input type="checkbox" name="skills" value="Html"> Stay up to date with the latest news
+              <input type="checkbox" name="skills" value="Html"> <p class="text-info">I agree to the terms and conditions</p>
             </label>
           </div>
                 
