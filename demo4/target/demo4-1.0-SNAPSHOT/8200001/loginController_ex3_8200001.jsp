@@ -1,0 +1,34 @@
+<%@ page import="exercise3_2022_2023_8200001.UserDAO" %>
+<%@ page import="exercise3_2022_2023_8200001.User" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page errorPage = "error_ex3_8200001.jsp" %>
+<html>
+<head>
+    <title>Title</title>
+</head>
+<body>
+    <%
+        request.setCharacterEncoding("UTF-8");
+        String username = request.getParameter("username");
+        String password = request.getParameter("password");
+        UserDAO usr = new UserDAO();
+
+        try {
+            User user = usr.authenticate(username, password);
+            session.setAttribute("userObj2022", user);
+            response.sendRedirect("dashboard_ex2_8200001.jsp");
+
+        }catch(Exception e){
+            request.setAttribute("message", e.getMessage());
+    %>
+            <jsp:forward page="login_ex3_8200001.jsp"></jsp:forward>
+
+    <%
+        }
+
+
+    %>
+
+
+</body>
+</html>
